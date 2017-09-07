@@ -13,7 +13,12 @@ header#header {
     header#header #navbar .brand {
       position: absolute;
       left: 54px;
-      top: -15px; }
+      top: -15px;
+      box-shadow: 0px -7px 10px rgba(0, 0, 0, 0.62);
+      -webkit-box-shadow: 0px -7px 10px rgba(0, 0, 0, 0.62);
+      -moz-box-shadow: 0px -7px 10px rgba(0, 0, 0, 0.62);
+      -o-box-shadow: 0px -7px 10px rgba(0, 0, 0, 0.62);
+      -ms-box-shadow: 0px -7px 10px rgba(0, 0, 0, 0.62); }
     header#header #navbar nav#nav {
       float: right; }
       header#header #navbar nav#nav ul::after {
