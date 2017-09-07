@@ -1,0 +1,1 @@
+{"version":3,"sources":["footer-section.css"],"names":[],"mappings":"AAAA,mBACE,aAAc,AACd,wBAA0B,CAAE","file":"../../components/footer-section.min.css","sourcesContent":["section#footer-bar {\n  height: 114px;\n  background-color: #d90217; }\n"]}

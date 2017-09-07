@@ -1,0 +1,1 @@
+{"version":3,"sources":["article.css"],"names":[],"mappings":"AAAA,UACE,eAAgB,AAChB,aAAe,CAAE,AACjB,YACE,eAAiB,CAAE","file":"../../components/article.min.css","sourcesContent":["article p {\n  font-size: 18px;\n  color: #3b3b3b; }\n  article p + p {\n    margin-top: 50px; }\n"]}

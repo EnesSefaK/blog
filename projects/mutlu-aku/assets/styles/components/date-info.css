@@ -1,0 +1,32 @@
+.date-info-boxes {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  letter-spacing: 0;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 50px 0; }
+  .date-info-boxes > * {
+    display: inline-block;
+    vertical-align: top; }
+  .date-info-boxes > * {
+    width: 33.33333%; }
+  .date-info-boxes .date-info {
+    min-height: 1px;
+    font-size: 1rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center; }
+    .date-info-boxes .date-info .info {
+      margin-bottom: 50px; }
+    .date-info-boxes .date-info time {
+      color: #d90217; }
+
+@media only screen and (max-width: 768px) {
+  .date-info-boxes > * {
+    width: 100%; }
+  .date-info {
+    margin-bottom: 50px; } }

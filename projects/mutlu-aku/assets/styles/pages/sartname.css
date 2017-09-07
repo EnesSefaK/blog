@@ -1,0 +1,9 @@
+article p {
+  font-size: 18px;
+  color: #3b3b3b; }
+  article p + p {
+    margin-top: 50px; }
+
+section#footer-bar {
+  height: 114px;
+  background-color: #d90217; }
