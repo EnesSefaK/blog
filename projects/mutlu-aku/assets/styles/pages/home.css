@@ -43,9 +43,15 @@
     box-sizing: border-box;
     text-align: center; }
     .date-info-boxes .date-info .info {
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      font-weight: 800;
+      font-style: italic;
+      font-size: 22px; }
     .date-info-boxes .date-info time {
-      color: #d90217; }
+      color: #d90217;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 24px; }
 
 @media only screen and (max-width: 768px) {
   .date-info-boxes > * {
@@ -81,7 +87,9 @@
     .kupa-info-boxes .kupa-info .info {
       margin-top: 40px;
       display: block;
-      line-height: 30px; }
+      line-height: 30px;
+      font-weight: 400;
+      font-size: 18px; }
 
 @media only screen and (max-width: 768px) {
   .kupa-info-boxes > * {
@@ -125,13 +133,11 @@
       margin: 0 auto; }
     .kurul-info-boxes .kurul-info figure figcaption {
       margin-top: 20px;
-      font-size: 18px;
       font-weight: 700;
-      line-height: 40px; }
+      font-size: 18px; }
       .kurul-info-boxes .kurul-info figure figcaption span {
         font-weight: 400;
-        font-size: 14px; }
-      .kurul-info-boxes .kurul-info figure figcaption span {
+        font-size: 14px;
         display: block; }
 
 @media only screen and (max-width: 768px) {

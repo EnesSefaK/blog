@@ -34,13 +34,11 @@
       margin: 0 auto; }
     .kurul-info-boxes .kurul-info figure figcaption {
       margin-top: 20px;
-      font-size: 18px;
       font-weight: 700;
-      line-height: 40px; }
+      font-size: 18px; }
       .kurul-info-boxes .kurul-info figure figcaption span {
         font-weight: 400;
-        font-size: 14px; }
-      .kurul-info-boxes .kurul-info figure figcaption span {
+        font-size: 14px;
         display: block; }
 
 @media only screen and (max-width: 768px) {
