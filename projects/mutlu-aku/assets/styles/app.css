@@ -194,7 +194,41 @@ textarea {
     position: absolute;
     top: -200%; }
   .file .btn {
-    width: 100%; }
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; }
+    .file .btn.success span {
+      -moz-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      background-color: #00bf1e; }
+    .file .btn.warning span {
+      -moz-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      background-color: #900210; }
+    .file .btn span {
+      transition: transform 0.3s ease-in-out;
+      -webkit-transition: transform 0.3s ease-in-out;
+      moz-transition: transform 0.3s ease-in-out;
+      o-transition: transform 0.3s ease-in-out;
+      ms-transition: transform 0.3s ease-in-out;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      -moz-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      text-align: center;
+      font-size: 12px;
+      font-weight: 300; }
 
 .check {
   position: relative;
