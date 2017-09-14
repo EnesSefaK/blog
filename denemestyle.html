@@ -10,7 +10,7 @@
 
 <script>
   window.addEventListener("load", function(){
-    var date = new Date().getMilliseconds();
-    console.log(date);
+    var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
+    console.log(loadTime)
   });
 </script>
