@@ -24,10 +24,10 @@
                 <li><a href="#">DETAYLAR</a></li>
                 <li><a href="#">ÖDÜLLER</a></li>
                 <li><a href="#">SEÇİCİ KURUL</a></li>
-                <li><a href="yarismaya-katil.html"> YARIŞMAYA KATIL!</a></li>
                 <li><a href="sartname.html">ŞARTNAME</a></li>
                 <li><a href="#">ARŞİV</a></li>
                 <li><a href="#">İLETİŞİM</a></li>
+                <li class="icon-menu"><a href="login.html"><img src="assets/images/icon/usericon.png"/><span>ÜYE GİRİŞİ</span></a></li>
               </ul>
             </nav>
           </div>
@@ -38,7 +38,7 @@
           <div id="page-space">
             <section>
               <header>
-                <h1 class="title2 color-red">YARIŞMAYA KATIL</h1>
+                <h1 class="title2 color-red">ÜYE PROFİLİ</h1>
               </header>
               <div class="content">
                 <form>
@@ -52,8 +52,8 @@
                       <input type="email" placeholder="E-Posta" name="email" id="email"/>
                     </div>
                     <div class="text-input">
-                      <label for="nickname">RUMUZ</label>
-                      <input type="text" placeholder="Rumuz" name="nickname" id="nickname"/>
+                      <label for="ogdno">OGD ÜYE NUMARAASI</label>
+                      <input type="text" placeholder="OGD Üye Numarası" name="ogdno" id="ogdno"/>
                     </div>
                     <div class="text-input">
                       <label for="phone">TELEFON</label>
@@ -72,25 +72,49 @@
                     <label for="address">ADRES</label>
                     <textarea placeholder="Adres" name="address" id="address"></textarea>
                   </div>
-                  <p class="text-center form-not">En fazla 4 fotoğraf ile katılım sağlanabilir. Fotoğraf özellikleri şartnamede yer alan özelliklere uygun olmalıdır!</p>
-                  <div class="row4">
-                    <div class="file">
-                      <input type="file" name="file1" id="file1"/>
-                      <label class="btn primary" for="file1">1. FOTOĞRAFI YÜKLE<span></span></label>
-                    </div>
-                    <div class="file">
-                      <input type="file" name="file2" id="file2"/>
-                      <label class="btn primary" for="file2">2. FOTOĞRAFI YÜKLE<span></span></label>
-                    </div>
-                    <div class="file">
-                      <input type="file" name="file3" id="file3"/>
-                      <label class="btn primary" for="file3">3. FOTOĞRAFI YÜKLE<span></span></label>
-                    </div>
-                    <div class="file">
-                      <input type="file" name="file4" id="file4"/>
-                      <label class="btn primary" for="file4">4. FOTOĞRAFI YÜKLE<span></span></label>
+                  <div id="image-boxes">
+                    <div class="row4">
+                      <div class="col">
+                        <div class="imagebox">
+                          <input class="dropify" type="file" data-max-file-size="3M" data-allowed-file-extensions="pdf png psd jpg"/>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imagebox">
+                          <input class="dropify" type="file" data-max-file-size="3M" data-allowed-file-extensions="pdf png psd jpg"/>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imagebox">
+                          <input class="dropify" type="file" data-max-file-size="3M" data-allowed-file-extensions="pdf png psd jpg"/>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imagebox">
+                          <input class="dropify" type="file" data-max-file-size="3M" data-allowed-file-extensions="pdf png psd jpg"/>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <p class="text-center form-not">En fazla 4 fotoğraf ile katılım sağlanabilir. Fotoğraf özellikleri şartnamede yer alan özelliklere uygun olmalıdır!</p>
+                  <!--.row4
+                  .file
+                    input(type="file", name="file1")#file1
+                    label(for="file1").btn.primary 1. FOTOĞRAFI YÜKLE
+                      span
+                  .file
+                    input(type="file", name="file2")#file2
+                    label(for="file2").btn.primary 2. FOTOĞRAFI YÜKLE
+                      span
+                  .file
+                    input(type="file", name="file3")#file3
+                    label(for="file3").btn.primary 3. FOTOĞRAFI YÜKLE
+                      span
+                  .file
+                    input(type="file", name="file4")#file4
+                    label(for="file4").btn.primary 4. FOTOĞRAFI YÜKLE
+                      span
+                  -->
                   <div class="check text-center">
                     <input type="checkbox" name="statu" id="statu"/>
                     <label for="statu"><a href="sartname.html">Şartname</a>’yi okudum, kabul ediyorum!</label>
@@ -107,7 +131,7 @@
       </div>
     </div>
     <footer id="footer">
-      <div class="container"><img class="brand" src="assets/images/logo.jpg"/>
+      <div class="container"><img class="brand" src="assets/images/logo.jpg"/><img class="brand" src="assets/images/partner/ogd.png"/>
         <ul class="social">
           <li><a href=""><img src="assets/images/icon/instagram-logo.png" title="instagram"/></a></li>
           <li><a href=""><img src="assets/images/icon/twitter-logo.png" title="twitter"/></a></li>
@@ -116,6 +140,7 @@
       </div>
     </footer>
     <link rel="stylesheet" href="assets/styles/pages/app-yarismaya-katil.min.css"/>
+    <link rel="stylesheet" href="assets/lib/dropify.css"/>
     <script>
       document.getElementById("mobile-menu-btn").addEventListener("click", function(){
         var navbar = document.getElementById("navbar");
@@ -125,23 +150,16 @@
           document.getElementById("loader").style.display = "none";
       });
     </script>
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/dropify.js"></script>
     <script>
-      var inputs = document.getElementsByTagName('input');
-      
-      for(var i = 0; i < inputs.length; i++) {
-        if(inputs[i].type.toLowerCase() == 'file') {
-          inputs[i].addEventListener("change", function(){
-            if(this.validity.valid){
-              this.nextElementSibling.classList.add("success");
-              this.nextElementSibling.getElementsByTagName("span")[0].innerText = 'İsim: '+this.files[0].name + ' / Boyut: ' + this.files[0].size +'bayt' ;
-            }
-            else{
-              this.nextElementSibling.classList.add("warning");
-              this.nextElementSibling.getElementsByTagName("span")[0].innerText = "HATA OLUŞTU!";
-            }
-          });
+      $('.dropify').dropify({
+        messages: {
+        'default': 'Fotoğraf Yüklemek İçin Tıklayın veya Fotoğrafınızı bu alana Sürükleyin',
+        'replace': 'Değiştirmek için sürükleyip bırakın veya tıklayın',
+        'remove':  'Kaldır',
         }
-      }
+      });
       
     </script>
   </body>

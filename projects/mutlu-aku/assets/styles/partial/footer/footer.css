@@ -1,7 +1,10 @@
 footer#footer {
   background-color: #fff;
   height: 85px;
-  line-height: 85px; }
+  line-height: 85px;
+  position: relative;
+  margin-top: -85px;
+  z-index: 99999; }
   footer#footer > .container {
     position: relative; }
   footer#footer .brand {
@@ -11,6 +14,8 @@ footer#footer {
     height: 150px;
     margin-bottom: -85px;
     z-index: 9; }
+    footer#footer .brand + .brand {
+      margin-left: 120px; }
   footer#footer ul.social {
     float: right; }
 

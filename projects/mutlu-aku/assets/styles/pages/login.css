@@ -1,0 +1,33 @@
+#page-content {
+  padding-bottom: 185px;
+  padding-top: 110px; }
+
+body {
+  background-image: url(../../images/loginbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#login-box {
+  width: 400px;
+  margin: 0 auto;
+  padding: 25px 35px;
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box; }
+  #login-box > header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ebebeb; }
+  #login-box > .content .text-input {
+    margin-bottom: 20px; }
+  #login-box > footer a {
+    display: block;
+    font-size: 14px;
+    color: #000; }
+    #login-box > footer a + a {
+      margin-top: 20px; }
+
+@media only screen and (max-width: 768px) {
+  #login-box {
+    width: 100%; } }

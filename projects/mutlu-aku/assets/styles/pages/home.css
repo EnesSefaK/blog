@@ -153,14 +153,7 @@
 
 @media only screen and (max-width: 768px) {
   #home-banner #center img#lens {
-    right: 0;
-    top: 63px; }
+    position: static;
+    margin: 50px auto; }
   #home-banner #center img#lens-foto {
-    top: -45px;
-    right: 0;
-    -moz-transform: rotate(97deg);
-    transform: rotate(97deg);
-    -webkit-transform: rotate(97deg);
-    -ms-transform: rotate(97deg);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.12186934340514717, M12=-0.9925461516413221, M21=0.9925461516413221, M22=-0.12186934340514717, SizingMethod='auto expand')";
-    filter: progid:DXImageTransform.Microsoft.Matrix(M11=-0.12186934340514717,M12=-0.9925461516413221,M21=0.9925461516413221,M22=-0.12186934340514717,SizingMethod='auto expand'); } }
+    display: none; } }
