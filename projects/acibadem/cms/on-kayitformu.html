@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="">
-    <meta name="description" content="Project Title">
-    <meta property="og:site_name" content="">
-    <meta property="fb:app_id" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://domain.com/">
-    <meta property="og:title" content="Facebook Share Title">
-    <meta property="og:description" content="Facebook Share Description">
-    <meta property="og:image" content="share-image.jpg">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Twitter Share Title">
-    <meta name="twitter:description" content="Twitter Share Description">
-    <link rel="canonical" href="">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="Project Title"/>
+    <meta property="og:site_name" content=""/>
+    <meta property="fb:app_id" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://domain.com/"/>
+    <meta property="og:title" content="Facebook Share Title"/>
+    <meta property="og:description" content="Facebook Share Description"/>
+    <meta property="og:image" content="share-image.jpg"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Twitter Share Title"/>
+    <meta name="twitter:description" content="Twitter Share Description"/>
+    <link rel="canonical" href=""/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
     <title>Acibadem</title><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
 <![endif]-->
 <!--[if lt IE 8]>
 <link href="assets/icon-fonts/ie7/ie7.css"/>
 <![endif]-->
-    <link rel="stylesheet" href="assets/css/vendor.css">
+    <!-- build:css assets/css/vendor.css-->
+    <!-- bower:css-->
+    <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.min.css"/>
+    <link rel="stylesheet" href="/bower_components/calendar-javascript-lib/stylesheet.css"/>
+    <!-- endbower-->
+    <!-- endbuild-->
     <!--link(rel='stylesheet', href='https://cdn.rawgit.com/nizarmah/calendar-javascript-lib/master/calendarorganizer.min.css')-->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- build:css assets/css/main.css-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!-- endbuild-->
   </head>
   <body>
     <main class="main-wrapper" role="main">
@@ -35,12 +42,12 @@
         <div id="headertop">
           <div class="container">
             <ul>
-              <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-book.png"></a></li>
+              <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-book.png"/></a></li>
               <li>
                 <ul class="social-list">
-                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-facebook.png"></a></li>
-                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-twitter.png"></a></li>
-                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-instagram.png"></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-facebook.png"/></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-twitter.png"/></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-instagram.png"/></a></li>
                 </ul>
               </li>
             </ul>
@@ -49,13 +56,13 @@
         <div id="headernavigations">
           <div class="container">
             <div id="headernavigations__content">
-              <div id="brand"><a href="index.html"><img src="assets/img/logo.gif"></a></div>
+              <div id="brand"><a href="index.html"><img src="assets/img/logo.gif"/></a></div>
               <button id="mobile-menu-btn"><span></span><span></span><span></span></button>
               <nav id="navigation">
                 <ul>
                   <li class="submenu"><a href="javascript:void(0)">KURUMSAL</a>
                     <div class="submenu-content">
-                      <figure><img src="assets/img/submenu.png">
+                      <figure><img src="assets/img/submenu.png"/>
                         <figcaption><a href="#">GEÇMİŞİN BİRİKİMİ GELECEĞİN EĞİTİMİ ACIBADEM’DE...</a></figcaption>
                       </figure>
                       <ul>
@@ -130,35 +137,35 @@
               <div class="form-row">
                 <div class="form-element">
                   <label for="student-name">Adı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-                  <input type="text" placeholder="Öğrenci Adı" required="required" id="student-name"><i class="mood-icon"></i>
+                  <input type="text" placeholder="Öğrenci Adı" required="required" id="student-name"/><i class="mood-icon"></i>
                 </div>
                 <div class="form-element">
                   <label for="student-surname">Soyadı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-                  <input type="text" placeholder="Öğrenci Soyadı" required="required" id="student-surname"><i class="mood-icon"></i>
+                  <input type="text" placeholder="Öğrenci Soyadı" required="required" id="student-surname"/><i class="mood-icon"></i>
                 </div>
                 <div class="form-element">
                   <label for="student-tc">TC. Kimlik Numarası<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message">Geçerli bir Değer Giriniz !</span></label>
-                  <input type="text" placeholder="TC. Kimlik Numarası" required="required" pattern="[0-9]{11}" id="student-tc"><i class="mood-icon"></i>
+                  <input type="text" placeholder="TC. Kimlik Numarası" required="required" pattern="[0-9]{11}" id="student-tc"/><i class="mood-icon"></i>
                 </div>
                 <div class="form-element">
                   <label for="student-dateofbirth">Doğum Tarihi<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message">Geçerli bir Değer Giriniz (01.01.2018)!</span></label>
-                  <input type="text" placeholder="Doğum Tarihi" required="required" pattern="[0-9]{1,2}.[0-9]{1,2}.[0-9]{4}" id="student-dateofbirth"><i class="mood-icon"></i>
+                  <input type="text" placeholder="Doğum Tarihi" required="required" pattern="[0-9]{1,2}.[0-9]{1,2}.[0-9]{4}" id="student-dateofbirth"/><i class="mood-icon"></i>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-element">
                   <label for="class-level">Başvurduğu Sınıf Seviyesi<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message"> Değer 5'den küçük 8'den büyük Olamaz !</span></label>
-                  <input type="number" placeholder="Başvurduğu Sınıf Seviyesi" required="required" min="5" max="8" pattern="[5-8]{1}" id="class-level"><i class="mood-icon"></i>
+                  <input type="number" placeholder="Başvurduğu Sınıf Seviyesi" required="required" min="5" max="8" pattern="[5-8]{1}" id="class-level"/><i class="mood-icon"></i>
                 </div>
                 <div class="form-element">
                   <label>Cinsiyet<span class="hidden form-error form-error--color-red">Zorunlu Alan *</span></label>
                   <div class="radio-group">
                     <div class="radio">
-                      <input class="gender-female" type="radio" name="studentGender" required="required" value="female" id="student-female">
+                      <input class="gender-female" type="radio" name="studentGender" required="required" value="female" id="student-female"/>
                       <label for="student-female"><i class="gender-icon female"></i><span>Kız</span></label>
                     </div>
                     <div class="radio">
-                      <input class="gender-male" type="radio" name="studentGender" value="male" id="student-male">
+                      <input class="gender-male" type="radio" name="studentGender" value="male" id="student-male"/>
                       <label for="student-male"><i class="gender-icon male"></i><span>Erkek</span></label>
                     </div>
                   </div>
@@ -177,7 +184,7 @@
                 </div>
                 <div class="form-element">
                   <label for="school-name">Okul Adı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-                  <input type="text" placeholder="Okul Adı" required="required" id="school-name">
+                  <input type="text" placeholder="Okul Adı" required="required" id="school-name"/>
                 </div>
               </div>
             </fieldset>
@@ -186,32 +193,32 @@
               <div class="form-row">
                 <div class="form-element">
                   <label for="parent-name">Veli Adı Soyadı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-                  <input type="text" placeholder="Veli Adı Soyadı" required="required" id="parent-name">
+                  <input type="text" placeholder="Veli Adı Soyadı" required="required" id="parent-name"/>
                 </div>
                 <div class="form-element">
                   <label>Yakınlık Derecesi</label>
                   <div class="radio-group">
                     <div class="radio">
-                      <input class="gender-female" type="radio" name="parent-proximity" id="parent-proximity-mother">
+                      <input class="gender-female" type="radio" name="parent-proximity" id="parent-proximity-mother"/>
                       <label for="parent-proximity-mother"><i class="gender-icon female"></i><span>Anne</span></label>
                     </div>
                     <div class="radio">
-                      <input class="gender-male" type="radio" name="parent-proximity" id="parent-proximity-father">
+                      <input class="gender-male" type="radio" name="parent-proximity" id="parent-proximity-father"/>
                       <label for="parent-proximity-father"><i class="gender-icon male"></i><span>Baba</span></label>
                     </div>
                     <div class="radio">
-                      <input class="gender-other" type="radio" name="parent-proximity" id="parent-proximity-other">
+                      <input class="gender-other" type="radio" name="parent-proximity" id="parent-proximity-other"/>
                       <label for="parent-proximity-other"><i class="gender-icon other"></i><span>Diğer</span></label>
                     </div>
                   </div>
                 </div>
                 <div class="form-element">
                   <label for="parent-phone">Veli Telefon<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-                  <input type="tel" placeholder="Veli Telefon" required="required" id="parent-phone">
+                  <input type="tel" placeholder="Veli Telefon" required="required" id="parent-phone"/>
                 </div>
                 <div class="form-element">
                   <label for="parent-mail">Veli Mail Adresi<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message">Geçerli bir Değer Giriniz !</span></label>
-                  <input type="email" placeholder="Veli Mail Adresi" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" required="required" id="parent-mail">
+                  <input type="email" placeholder="Veli Mail Adresi" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" required="required" id="parent-mail"/>
                 </div>
                 <div class="form-element">
                   <label for="address">Adres</label>
@@ -231,7 +238,7 @@
                 </div>
                 <div class="form-element">
                   <label for="test-time">Sınav Saati<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-                  <input type="time" placeholder="Sınav Saati" required="required" name="test-time" id="test-time">
+                  <input type="time" placeholder="Sınav Saati" required="required" name="test-time" id="test-time"/>
                 </div>
               </div>
             </fieldset>
@@ -310,19 +317,19 @@
                 <p>Haftalık haber bültenimize ücretsiz üye olarak Özel ACIBADEM Koleji ile ilgili tüm gelişmelerden haberdar olun!</p>
                 <form>
                   <div class="form-control">
-                    <input type="email" placeholder="AD, SOYAD" name="form-name" id="form-name">
+                    <input type="email" placeholder="AD, SOYAD" name="form-name" id="form-name"/>
                   </div>
                   <div class="form-control">
-                    <input type="password" placeholder="E-POSTA ADRESİ" name="form-mail" id="form-mail">
+                    <input type="password" placeholder="E-POSTA ADRESİ" name="form-mail" id="form-mail"/>
                   </div>
                   <div class="form-control">
                     <button class="link link--position-left" type="submit">ABONE OL!</button>
                   </div>
                 </form>
                 <ul class="social-list">
-                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-facebook-footer.png"></a></li>
-                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-twitter-footer.png"></a></li>
-                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-instagram-footer.png"></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-facebook-footer.png"/></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-twitter-footer.png"/></a></li>
+                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-instagram-footer.png"/></a></li>
                 </ul>
               </div>
             </div>
@@ -330,14 +337,21 @@
         </div>
         <div id="footer__copyright">
           <div class="container">
-            <div id="footer__brand"><img src="assets/img/logo.gif" title="Acibadem Okulları Logo"></div>
-            <div id="footer__links"><a rel="license" href="#">Tüm Hakları Saklıdır &copy; 2017 <br> ÖZEL ACIBADEM OKULLARI</a></div>
+            <div id="footer__brand"><img src="assets/img/logo.gif" title="Acibadem Okulları Logo"/></div>
+            <div id="footer__links"><a rel="license" href="#">Tüm Hakları Saklıdır &copy; 2017 <br/> ÖZEL ACIBADEM OKULLARI</a></div>
           </div>
         </div>
       </footer>
     </main>
     <!-- JS Files-->
-    <script src="assets/js/vendor.js"></script>
+    <!-- build:js assets/js/vendor.js-->
+    <!-- bower:js-->
+    <script src="/bower_components/swiper/dist/js/swiper.min.js"></script>
+    <script src="/bower_components/calendar-javascript-lib/library.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js(.tmp) assets/js/main.build.js-->
     <script src="assets/js/main.build.js"></script>
+    <!-- endbuild-->
   </body>
 </html>

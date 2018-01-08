@@ -1,0 +1,123 @@
+
+<div id="subpage">
+  <div class="container">
+    <h1 class="pagetitle">Önkayıt Formu</h1>
+    <form action="#" method="post" name="registerForm" id="register-form">
+      <fieldset>
+        <legend>Başvuran Öğrencinin;</legend>
+        <div class="form-row">
+          <div class="form-element">
+            <label for="student-name">Adı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
+            <input type="text" placeholder="Öğrenci Adı" required="required" id="student-name"/><i class="mood-icon"></i>
+          </div>
+          <div class="form-element">
+            <label for="student-surname">Soyadı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
+            <input type="text" placeholder="Öğrenci Soyadı" required="required" id="student-surname"/><i class="mood-icon"></i>
+          </div>
+          <div class="form-element">
+            <label for="student-tc">TC. Kimlik Numarası<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message">Geçerli bir Değer Giriniz !</span></label>
+            <input type="text" placeholder="TC. Kimlik Numarası" required="required" pattern="[0-9]{11}" id="student-tc"/><i class="mood-icon"></i>
+          </div>
+          <div class="form-element">
+            <label for="student-dateofbirth">Doğum Tarihi<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message">Geçerli bir Değer Giriniz (01.01.2018)!</span></label>
+            <input type="text" placeholder="Doğum Tarihi" required="required" pattern="[0-9]{1,2}.[0-9]{1,2}.[0-9]{4}" id="student-dateofbirth"/><i class="mood-icon"></i>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-element">
+            <label for="class-level">Başvurduğu Sınıf Seviyesi<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message"> Değer 5'den küçük 8'den büyük Olamaz !</span></label>
+            <input type="number" placeholder="Başvurduğu Sınıf Seviyesi" required="required" min="5" max="8" pattern="[5-8]{1}" id="class-level"/><i class="mood-icon"></i>
+          </div>
+          <div class="form-element">
+            <label>Cinsiyet<span class="hidden form-error form-error--color-red">Zorunlu Alan *</span></label>
+            <div class="radio-group">
+              <div class="radio">
+                <input class="gender-female" type="radio" name="studentGender" required="required" value="female" id="student-female"/>
+                <label for="student-female"><i class="gender-icon female"></i><span>Kız</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-male" type="radio" name="studentGender" value="male" id="student-male"/>
+                <label for="student-male"><i class="gender-icon male"></i><span>Erkek</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Başvuran Öğrencinin Okul Bilgileri;</legend>
+        <div class="form-row">
+          <div class="form-element">
+            <label for="school-type">Okul Türü<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
+            <select placeholder="Özel Okul" required="required" id="school-type">
+              <option>Özel Okul</option>
+              <option>Devlet Okulu</option>
+            </select>
+          </div>
+          <div class="form-element">
+            <label for="school-name">Okul Adı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
+            <input type="text" placeholder="Okul Adı" required="required" id="school-name"/>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Başvuran Öğrencinin İletişim Bilgileri;</legend>
+        <div class="form-row">
+          <div class="form-element">
+            <label for="parent-name">Veli Adı Soyadı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
+            <input type="text" placeholder="Veli Adı Soyadı" required="required" id="parent-name"/>
+          </div>
+          <div class="form-element">
+            <label>Yakınlık Derecesi</label>
+            <div class="radio-group">
+              <div class="radio">
+                <input class="gender-female" type="radio" name="parent-proximity" id="parent-proximity-mother"/>
+                <label for="parent-proximity-mother"><i class="gender-icon female"></i><span>Anne</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-male" type="radio" name="parent-proximity" id="parent-proximity-father"/>
+                <label for="parent-proximity-father"><i class="gender-icon male"></i><span>Baba</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-other" type="radio" name="parent-proximity" id="parent-proximity-other"/>
+                <label for="parent-proximity-other"><i class="gender-icon other"></i><span>Diğer</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="form-element">
+            <label for="parent-phone">Veli Telefon<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
+            <input type="tel" placeholder="Veli Telefon" required="required" id="parent-phone"/>
+          </div>
+          <div class="form-element">
+            <label for="parent-mail">Veli Mail Adresi<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message">Geçerli bir Değer Giriniz !</span></label>
+            <input type="email" placeholder="Veli Mail Adresi" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" required="required" id="parent-mail"/>
+          </div>
+          <div class="form-element">
+            <label for="address">Adres</label>
+            <textarea name="address" cols="30" rows="2" id="address"></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Başvuran Öğrencinin Sınav Bilgileri;</legend>
+        <div class="form-row">
+          <div class="form-element">
+            <label for="school-type">Sınav Yeri<span class="hidden form-error form-error--color-red required-message">Sınav Yeri *</span></label>
+            <select placeholder="Sınav Yeri" required="required" name="test-location" id="test-location">
+              <option>Çamlıca Kampüsü</option>
+              <option>Acıbadem Kampüsü</option>
+            </select>
+          </div>
+          <div class="form-element">
+            <label for="test-time">Sınav Saati<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
+            <input type="time" placeholder="Sınav Saati" required="required" name="test-time" id="test-time"/>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-row">
+        <div class="form-element">
+          <button type="submit">Gönder</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
