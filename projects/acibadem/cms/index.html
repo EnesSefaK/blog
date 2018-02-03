@@ -31,7 +31,6 @@
     <link rel="stylesheet" href="/bower_components/calendar-javascript-lib/stylesheet.css"/>
     <!-- endbower-->
     <!-- endbuild-->
-    <!--link(rel='stylesheet', href='https://cdn.rawgit.com/nizarmah/calendar-javascript-lib/master/calendarorganizer.min.css')-->
     <!-- build:css assets/css/main.css-->
     <link rel="stylesheet" href="assets/css/main.css"/>
     <!-- endbuild-->
@@ -41,16 +40,19 @@
       <header id="header">
         <div id="headertop">
           <div class="container">
-            <ul>
-              <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-book.png"/></a></li>
-              <li>
-                <ul class="social-list">
-                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-facebook.png"/></a></li>
-                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-twitter.png"/></a></li>
-                  <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-instagram.png"/></a></li>
-                </ul>
-              </li>
-            </ul>
+            <nav class="top-navigation">
+              <ul>
+                <li class="top-navigation__item top-navigation__item--icon"><a href="javascript:void(0)"><img src="assets/img/icons/icon-information.png"/><span>BİLGİ SİSTEMİ K12</span></a></li>
+                <li class="top-navigation__item top-navigation__item--icon"><a href="javascript:void(0)"><img src="assets/img/icons/icon-book.png"/><span>BLOG</span></a></li>
+                <li class="top-navigation__item">
+                  <ul class="social-list">
+                    <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-facebook.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-twitter.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/img/icons/icon-instagram.png"/></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
         <div id="headernavigations">
@@ -133,44 +135,42 @@
           <div class="swiper-container" id="swiper-content-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <h2 class="swiper-content-slider__title">ÖĞRENCİYE <br/> “ÖZEL” OKUL!</h2>
-                <p class="swiper-content-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consequat erat. Curabitur molestie ultrices est, eu pellentesque nunc hendrerit eu. Donec vitae laoreet nunc. </p>
+                <h2 class="swiper-content-slider__title"><a href="#">ÖĞRENCİYE <br/> “ÖZEL” OKUL!</a></h2>
+                <p class="swiper-content-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consequat erat. Curabitur molestie ultrices est, eu pellentesque nunc hendrerit eu. Donec vitae laoreet nunc.</p>
               </div>
               <div class="swiper-slide">
-                <h2 class="swiper-content-slider__title">ÖĞRENCİYE <br/> “ÖZEL” OKUL!</h2>
-                <p class="swiper-content-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consequat erat. Curabitur molestie ultrices est, eu pellentesque nunc hendrerit eu. Donec vitae laoreet nunc. </p>
+                <h2 class="swiper-content-slider__title"><a href="#">ÖĞRENCİYE <br/> “ÖZEL” OKUL!</a></h2>
+                <p class="swiper-content-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consequat erat. Curabitur molestie ultrices est, eu pellentesque nunc hendrerit eu. Donec vitae laoreet nunc.</p>
               </div>
               <div class="swiper-slide">
-                <h2 class="swiper-content-slider__title">HTML5 <br/> VİDEO</h2>
-                <p class="swiper-content-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consequat erat. Curabitur molestie ultrices est, eu pellentesque nunc hendrerit eu. Donec vitae laoreet nunc. </p>
+                <h2 class="swiper-content-slider__title"><a href="#">HTML5 <br/> VİDEO</a></h2>
+                <p class="swiper-content-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consequat erat. Curabitur molestie ultrices est, eu pellentesque nunc hendrerit eu. Donec vitae laoreet nunc.</p>
               </div>
               <div class="swiper-slide">
-                <h2 class="swiper-content-slider__title">Youtube <br/> VİDEO</h2>
-                <p class="swiper-content-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consequat erat. Curabitur molestie ultrices est, eu pellentesque nunc hendrerit eu. Donec vitae laoreet nunc. </p>
+                <h2 class="swiper-content-slider__title"><a href="#">Youtube <br/> VİDEO</a></h2>
+                <p class="swiper-content-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consequat erat. Curabitur molestie ultrices est, eu pellentesque nunc hendrerit eu. Donec vitae laoreet nunc.</p>
               </div>
-            </div>
-            <!-- Add Arrows-->
-            <div id="swiper-content-slider__navigation">
-              <div class="swiper-button-prev swiper-button-white"></div>
-              <div class="swiper-button-next swiper-button-white"></div>
             </div>
           </div>
         </div>
         <div id="slider__media">
           <div class="swiper-container" id="swiper-media-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" data-hash="slide1" style="background-image:url(assets/img/slider/slider1.png);"></div>
-              <div class="swiper-slide" data-hash="slide2" style="background-image:url(assets/img/slider/slider2.png);"></div>
-              <div class="swiper-slide" data-hash="html5-video-slide">
-                <video poster="assets/img/slider/slider2.png" playsinline="playsinline">
-                  <source src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_normal.mp4" type="video/mp4"/>
-                  <source src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_normal.ogg" type="video/ogg"/>Tarayıcınız HTML5 Video Oynatmayı Desteklememektedir.
-                </video>
-              </div>
-              <div class="swiper-slide" data-hash="youtube-video-slide">
-                <iframe src="https://www.youtube.com/embed/ZW5OIX6VVNU?rel=0&amp;amp;controls=0" gesture="media" allow="encrypted-media" allowfullscreen="allowfullscreen"></iframe>
-              </div>
+            <div class="swiper-wrapper"><a class="swiper-slide-link swiper-slide" href="#" data-hash="slide1" style="background-image:url(assets/img/slider/slider1.png);"></a><a class="swiper-slide-link swiper-slide" href="#" data-hash="slide1" style="background-image:url(assets/img/slider/slider1.png);">
+                <div class="swiper-slide" data-hash="slide2" style="background-image:url(assets/img/slider/slider2.png);"></div></a>
+              <!--.swiper-slide(data-hash="html5-video-slide")
+              video(poster="assets/img/slider/slider2.png", playsinline)
+              	source(src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_normal.mp4" type="video/mp4")
+              	source(src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_normal.ogg" type="video/ogg")
+              	| Tarayıcınız HTML5 Video Oynatmayı Desteklememektedir.
+              -->
+              <!--.swiper-slide(data-hash="youtube-video-slide")iframe(src="https://www.youtube.com/embed/ZW5OIX6VVNU?rel=0&amp;controls=0", gesture="media", allow="encrypted-media", allowfullscreen)
+              -->
             </div>
+          </div>
+          <!-- Add Arrows-->
+          <div id="swiper-content-slider__navigation">
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
           </div>
         </div>
       </div>
@@ -178,31 +178,25 @@
         <div id="home-wrap">
           <aside id="home-wrap__aside">
             <div id="home-wrap__aside__content">
-              <div class="aside-item">
-                <header class="aside-item__header">
-                  <div class="icon-head">
-                    <div class="icon-head__left"><img class="icon-head__img" src="assets/img/icons/icon-information.png"/></div>
-                    <div class="icon-head__right">
-                      <h2 class="icon-head__title">Bilgi Sistemi</h2>
-                    </div>
-                  </div>
-                </header>
-                <div class="aside-item__main">
-                  <form>
-                    <div class="form-control">
-                      <label for="form-username">KULLANICI ADI</label>
-                      <input type="text" placeholder="USER NAME" name="form-username" id="form-username"/>
-                    </div>
-                    <div class="form-control">
-                      <label for="form-password">ŞİFRE</label>
-                      <input type="password" placeholder="PASSWORD" name="form-password" id="form-password"/>
-                    </div>
-                    <div class="form-control">
-                      <button class="link" type="submit">GİRİŞ YAP</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+              <!--div.aside-item
+              header.aside-item__header
+              	div.icon-head
+              		div.icon-head__left
+              			img(src="assets/img/icons/icon-information.png").icon-head__img
+              		div.icon-head__right
+              			h2.icon-head__title Bilgi Sistemi
+              div.aside-item__main
+              	form
+              		.form-control
+              			label(for="form-username") KULLANICI ADI
+              			input(type="text", placeholder="USER NAME", name="form-username")#form-username
+              		.form-control
+              			label(for="form-password") ŞİFRE
+              			input(type="password", placeholder="PASSWORD", name="form-password")#form-password
+              		.form-control
+              			button.link(type="submit") GİRİŞ YAP
+              
+              -->
               <div class="aside-item">
                 <header class="aside-item__main">
                   <div class="icon-head">
@@ -272,6 +266,19 @@
                   </div>
                 </div>
               </div>
+              <div class="aside-item">
+                <header class="aside-item__main">
+                  <div class="icon-head">
+                    <div class="icon-head__left"><img class="icon-head__img" src="assets/img/icons/icon-note.png"/></div>
+                    <div class="icon-head__right">
+                      <h2 class="icon-head__title icon-head__title--small">Ön Kayıt Formu</h2>
+                    </div>
+                  </div>
+                </header>
+                <div class="aside-item__main">
+                  <figure><img src="assets/img/onkayit.png"/></figure><a class="btn btn--bg-white btn--block btn--center" href="onkayit.html">ÖN KAYIT FORMU</a>
+                </div>
+              </div>
             </div>
           </aside>
           <div id="home-wrap__right">
@@ -329,7 +336,7 @@
                     <button type="button" id="organizer--state-close">X</button>
                   </header>
                   <div class="main">
-                    <div id="calendar">
+                    <div id="calendar" data-url="assets/akademiktakvim.json">
                       <div id="calendarContainer"></div>
                       <div id="organizerContainer"></div>
                     </div>
@@ -512,19 +519,5 @@
     <!-- build:js(.tmp) assets/js/main.build.js-->
     <script src="assets/js/main.build.js"></script>
     <!-- endbuild-->
-    <script>
-      // Akademik Takvim Verileri
-      	window.addEventListener("load", function(){
-      		var xhttp = new XMLHttpRequest();
-      		xhttp.onreadystatechange = function () {
-      			if (this.readyState == 4 && this.status == 200) {
-      				window.organizer.data = JSON.parse(this.responseText);
-      			}
-      		};
-      		xhttp.open("GET", "assets/akademiktakvim.json", true);
-      		xhttp.send();
-      	});
-      
-    </script>
   </body>
 </html>

@@ -125,64 +125,42 @@
       </header>
       <div id="subpage">
         <div class="container">
-          <div id="subpage__wrap">
-            <aside id="subpage__aside"><img src="assets/img/school.png" alt="" style="margin-bottom: -60px;">
-              <ul>
-                <li>
-                  <input name="submenu" type="radio" checked="checked" id="kurumsal-accordion">
-                  <label for="kurumsal-accordion">KURUMSAL</label>
-                  <ul>
-                    <li><a href="">Hakkımızda</a></li>
-                    <li><a href="">Genel Müdür Mesajı</a></li>
-                    <li><a href="">Yönetim Kadrosu</a></li>
-                    <li><a href="">Niçin ACIBADEM ?</a></li>
-                    <li><a href="">Danışmanlarımız</a></li>
-                    <li><a href="">İdari Birimler</a></li>
-                    <li><a href="">İnsan Kaynakları</a></li>
-                    <li><a href="">Basında Biz</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <input name="submenu" type="radio" id="kayit-accordion">
-                  <label for="kayit-accordion">KAYIT BAŞVURU</label>
-                  <ul>
-                    <li><a href="">Kayıt Bilgileri</a></li>
-                    <li><a href="">Kayıt Şartları</a></li>
-                    <li><a href="">Ön Kayıt</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </aside>
-            <article class="subpage__content--width-full" id="subpage__content">
-              <section class="article-section article-section--size-full">
-                <div class="article-section__content article-section__content--bg-white">
-                  <header>
-                    <h2 class="title title--color-red">SSS (Sıkça Sorulan Sorular)</h2>
-                  </header>
-                  <div class="main">
-                    <div class="accordion">
-                      <div class="accordion__header">
-                        <h3 class="accordion__title">Başlık</h3>
-                      </div>
-                      <div class="accordion__content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis eaque debitis officiis porro? Maxime autem numquam nostrum, sit eos repudiandae minus tempora illum sequi vero eaque accusantium, reiciendis provident delectus a consequuntur tenetur excepturi dignissimos similique? Voluptate sunt nesciunt dolorum repellat cupiditate culpa, quisquam dignissimos est! Atque eligendi aliquid recusandae sunt. Nulla distinctio mollitia veritatis. Qui autem veniam esse minima, voluptatum quaerat maxime corrupti quam vitae iusto sit laboriosam ipsum commodi sint laborum! Quis nam esse maiores itaque optio impedit ea beatae. Quibusdam molestiae debitis reprehenderit consectetur, quis itaque harum error animi, exercitationem, eum cumque necessitatibus pariatur inventore excepturi quia.</p>
-                      </div>
-                    </div>
-                    <div class="accordion">
-                      <div class="accordion__header">
-                        <h3 class="accordion__title">Başlık</h3>
-                      </div>
-                      <div class="accordion__content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis eaque debitis officiis porro? Maxime autem numquam nostrum, sit eos repudiandae minus tempora illum sequi vero eaque accusantium, reiciendis provident delectus a consequuntur tenetur excepturi dignissimos similique? Voluptate sunt nesciunt dolorum repellat cupiditate culpa, quisquam dignissimos est! Atque eligendi aliquid recusandae sunt. Nulla distinctio mollitia veritatis. Qui autem veniam esse minima, voluptatum quaerat maxime corrupti quam vitae iusto sit laboriosam ipsum commodi sint laborum! Quis nam esse maiores itaque optio impedit ea beatae. Quibusdam molestiae debitis reprehenderit consectetur, quis itaque harum error animi, exercitationem, eum cumque necessitatibus pariatur inventore excepturi quia.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </article>
-          </div>
+          <h1 class="pagetitle">Başvuru Formu</h1>
+          <form id="application-form" action="#" method="post" name="applicationForm">
+            <div class="form-row">
+              <div class="form-element form-element--size-4">
+                <label for="student-name">Öğrenci Adı ve Soyadı<span class="hidden form-error form-error--color-red required-message" data-name="studentName">Zorunlu Alan *</span></label>
+                <input id="student-name" type="text" placeholder="Öğrenci Adı ve Soyadı" required="required" name="studentName"><i class="mood-icon"></i>
+              </div>
+              <div class="form-element form-element--size-4">
+                <label for="parent-name">Veli Adı ve Soyadı<span class="hidden form-error form-error--color-red required-message" data-name="parentName">Zorunlu Alan *</span></label>
+                <input id="parent-name" type="text" placeholder="Veli Adı ve Soyadı" required="required" name="parentName"><i class="mood-icon"></i>
+              </div>
+              <div class="form-element form-element--size-4">
+                <label for="class-level">Başvurduğu Sınıf Seviyesi<span class="hidden form-error form-error--color-red required-message" data-name="level">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="level"> Değer 5'den küçük 8'den büyük Olamaz !</span></label>
+                <input type="number" placeholder="Başvurduğu Sınıf Seviyesi" name="level" required="required" min="5" max="8" pattern="[5-8]{1}" id="class-level">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-element form-element--size-2">
+                <label for="phone">Telefon Numarası<span class="hidden form-error form-error--color-red required-message" data-name="phone">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="phone">Geçerli bir Değer Giriniz ! (05554445566)</span></label>
+                <input id="parent-phone" type="tel" placeholder="Telefon Numarası" required="required" pattern="[0-9]{11}" name="phone"><i class="mood-icon"></i>
+              </div>
+              <div class="form-element form-element--size-2">
+                <label for="mail">Mail Adresi<span class="hidden form-error form-error--color-red required-message" data-name="mail">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="mail">Geçerli bir Değer Giriniz !</span></label>
+                <input id="parent-mail" type="mail" placeholder="Mail Adresi" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" required="required" name="mail"><i class="mood-icon"></i>
+              </div>
+              <div class="form-element" style="width: 100%;">
+                <label for="description">Açıklama</label>
+                <textarea id="address" name="description" cols="60" rows="2" placeholder="Açıklama"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-element">
+                <button class="btn btn--bg-red" type="submit">Gönder</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
       <footer id="footer">

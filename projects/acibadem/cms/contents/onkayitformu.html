@@ -2,41 +2,42 @@
 <div id="subpage">
   <div class="container">
     <h1 class="pagetitle">Önkayıt Formu</h1>
-    <form action="#" method="post" name="registerForm" id="register-form">
+    <form class="print" action="http://localhost:8329/pages/erken-kayit-formu" method="post" name="registerForm" id="register-form">
+      <input name="__RequestVerificationToken" type="hidden" value="UBpQsqyEdFAMLzmusVHFF-5rCn0aSy5FaMxb0i1t6-5m_fT1K5n5kkP0laKbaad4eK4hTKokLjEFnXGeslTmtemFn-ocyqgMXXx7ARA0Iwk1"/>
       <fieldset>
         <legend>Başvuran Öğrencinin;</legend>
         <div class="form-row">
           <div class="form-element">
-            <label for="student-name">Adı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-            <input type="text" placeholder="Öğrenci Adı" required="required" id="student-name"/><i class="mood-icon"></i>
+            <label for="student-name">Adı<span class="hidden form-error form-error--color-red required-message" data-name="studentName">Zorunlu Alan *</span></label>
+            <input type="text" placeholder="Öğrenci Adı" name="studentName" required="required" id="student-name"/><i class="mood-icon"></i>
           </div>
           <div class="form-element">
-            <label for="student-surname">Soyadı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-            <input type="text" placeholder="Öğrenci Soyadı" required="required" id="student-surname"/><i class="mood-icon"></i>
+            <label for="student-surname">Soyadı<span class="hidden form-error form-error--color-red required-message" data-name="studentSurname">Zorunlu Alan *</span></label>
+            <input type="text" placeholder="Öğrenci Soyadı" name="studentSurname" required="required" id="student-surname"/><i class="mood-icon"></i>
           </div>
           <div class="form-element">
-            <label for="student-tc">TC. Kimlik Numarası<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message">Geçerli bir Değer Giriniz !</span></label>
-            <input type="text" placeholder="TC. Kimlik Numarası" required="required" pattern="[0-9]{11}" id="student-tc"/><i class="mood-icon"></i>
+            <label for="student-tc">TC. Kimlik Numarası<span class="hidden form-error form-error--color-red required-message" data-name="tc">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="tc">Geçerli bir Değer Giriniz !</span></label>
+            <input type="text" placeholder="TC. Kimlik Numarası" name="tc" required="required" pattern="[0-9]{11}" id="student-tc"/><i class="mood-icon"></i>
           </div>
           <div class="form-element">
-            <label for="student-dateofbirth">Doğum Tarihi<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message">Geçerli bir Değer Giriniz (01.01.2018)!</span></label>
-            <input type="text" placeholder="Doğum Tarihi" required="required" pattern="[0-9]{1,2}.[0-9]{1,2}.[0-9]{4}" id="student-dateofbirth"/><i class="mood-icon"></i>
+            <label for="student-dateofbirth">Doğum Tarihi<span class="hidden form-error form-error--color-red required-message" data-name="dateOfBirth">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="dateOfBirth"> Geçerli bir Değer Giriniz (01.01.2018)!</span></label>
+            <input type="date" placeholder="Doğum Tarihi" name="dateOfBirth" required="required" pattern="[0-9]{1,2}.[0-9]{1,2}.[0-9]{4}" id="student-dateofbirth"/><i class="mood-icon"></i>
           </div>
         </div>
         <div class="form-row">
           <div class="form-element">
-            <label for="class-level">Başvurduğu Sınıf Seviyesi<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message"> Değer 5'den küçük 8'den büyük Olamaz !</span></label>
-            <input type="number" placeholder="Başvurduğu Sınıf Seviyesi" required="required" min="5" max="8" pattern="[5-8]{1}" id="class-level"/><i class="mood-icon"></i>
+            <label for="class-level">Başvurduğu Sınıf Seviyesi<span class="hidden form-error form-error--color-red required-message" data-name="level">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="level"> Değer 5'den küçük 8'den büyük Olamaz !</span></label>
+            <input type="number" placeholder="Başvurduğu Sınıf Seviyesi" name="level" required="required" min="5" max="8" pattern="[5-8]{1}" id="class-level"/><i class="mood-icon"></i>
           </div>
           <div class="form-element">
-            <label>Cinsiyet<span class="hidden form-error form-error--color-red">Zorunlu Alan *</span></label>
+            <label>Cinsiyet<span class="hidden form-error form-error--color-red required-message" data-name="StudentGender">Zorunlu Alan *</span></label>
             <div class="radio-group">
               <div class="radio">
-                <input class="gender-female" type="radio" name="studentGender" required="required" value="female" id="student-female"/>
+                <input class="gender-female" type="radio" name="StudentGender" required="required" value="Kız" id="student-female"/>
                 <label for="student-female"><i class="gender-icon female"></i><span>Kız</span></label>
               </div>
               <div class="radio">
-                <input class="gender-male" type="radio" name="studentGender" value="male" id="student-male"/>
+                <input class="gender-male" type="radio" name="StudentGender" required="required" value="Erkek" id="student-male"/>
                 <label for="student-male"><i class="gender-icon male"></i><span>Erkek</span></label>
               </div>
             </div>
@@ -47,15 +48,15 @@
         <legend>Başvuran Öğrencinin Okul Bilgileri;</legend>
         <div class="form-row">
           <div class="form-element">
-            <label for="school-type">Okul Türü<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-            <select placeholder="Özel Okul" required="required" id="school-type">
+            <label for="school-type">Okul Türü<span class="hidden form-error form-error--color-red required-message" data-name="schollType">Zorunlu Alan *</span></label>
+            <select placeholder="Özel Okul" name="schollType" required="required" id="school-type">
               <option>Özel Okul</option>
               <option>Devlet Okulu</option>
             </select>
           </div>
           <div class="form-element">
-            <label for="school-name">Okul Adı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-            <input type="text" placeholder="Okul Adı" required="required" id="school-name"/>
+            <label for="school-name">Okul Adı<span class="hidden form-error form-error--color-red required-message" data-name="schollName">Zorunlu Alan *</span></label>
+            <input type="text" placeholder="Okul Adı" name="schollName" required="required" id="school-name"/>
           </div>
         </div>
       </fieldset>
@@ -63,8 +64,8 @@
         <legend>Başvuran Öğrencinin İletişim Bilgileri;</legend>
         <div class="form-row">
           <div class="form-element">
-            <label for="parent-name">Veli Adı Soyadı<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-            <input type="text" placeholder="Veli Adı Soyadı" required="required" id="parent-name"/>
+            <label for="parent-name">Veli Adı Soyadı<span class="hidden form-error form-error--color-red required-message" data-name="parentName">Zorunlu Alan *</span></label>
+            <input type="text" placeholder="Veli Adı Soyadı" name="parentName" required="required" id="parent-name"/>
           </div>
           <div class="form-element">
             <label>Yakınlık Derecesi</label>
@@ -84,12 +85,12 @@
             </div>
           </div>
           <div class="form-element">
-            <label for="parent-phone">Veli Telefon<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-            <input type="tel" placeholder="Veli Telefon" required="required" id="parent-phone"/>
+            <label for="parent-phone">Veli Telefon<span class="hidden form-error form-error--color-red required-message" data-name="parentPhone">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="parentPhone">Geçerli bir Değer Giriniz !  0___ &nbsp;___  &nbsp;__  &nbsp;__ </span></label>
+            <input type="tel" placeholder="Veli Telefon" name="parentPhone" pattern="[0-9]{4}[- . s][0-9]{3}[- . s][0-9]{2}[- . s][0-9]{2}" required="required" id="parent-phone"/>
           </div>
           <div class="form-element">
-            <label for="parent-mail">Veli Mail Adresi<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message">Geçerli bir Değer Giriniz !</span></label>
-            <input type="email" placeholder="Veli Mail Adresi" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" required="required" id="parent-mail"/>
+            <label for="parent-mail">Veli Mail Adresi<span class="hidden form-error form-error--color-red required-message" data-name="parentMail">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="parentMail">Geçerli bir Değer Giriniz !</span></label>
+            <input type="email" placeholder="Veli Mail Adresi" name="parentMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" required="required" id="parent-mail"/>
           </div>
           <div class="form-element">
             <label for="address">Adres</label>
@@ -101,23 +102,83 @@
         <legend>Başvuran Öğrencinin Sınav Bilgileri;</legend>
         <div class="form-row">
           <div class="form-element">
-            <label for="school-type">Sınav Yeri<span class="hidden form-error form-error--color-red required-message">Sınav Yeri *</span></label>
-            <select placeholder="Sınav Yeri" required="required" name="test-location" id="test-location">
+            <label for="school-type">Sınav Yeri<span class="hidden form-error form-error--color-red required-message" data-name="testLocation">Sınav Yeri *</span></label>
+            <select placeholder="Sınav Yeri" required="required" name="testLocation" id="test-location">
               <option>Çamlıca Kampüsü</option>
               <option>Acıbadem Kampüsü</option>
             </select>
           </div>
           <div class="form-element">
-            <label for="test-time">Sınav Saati<span class="hidden form-error form-error--color-red required-message">Zorunlu Alan *</span></label>
-            <input type="time" placeholder="Sınav Saati" required="required" name="test-time" id="test-time"/>
+            <label for="test-time">Sınav Saati<span class="hidden form-error form-error--color-red required-message" data-name="testTime">Zorunlu Alan *</span></label>
+            <input type="time" placeholder="Sınav Saati" required="required" name="testTime" id="test-time"/>
           </div>
         </div>
       </fieldset>
-      <div class="form-row">
-        <div class="form-element">
-          <button type="submit">Gönder</button>
+      <fieldset>
+        <legend>Acıbadem Okulları bursluluk sınavından nasıl haberdar oldunuz?;</legend>
+        <div class="form-row">
+          <div class="form-element form-element--size-full">
+            <div class="radio-group radio-group--space">
+              <div class="radio">
+                <input class="gender-others" id="facebook" type="radio" name="whats" value="facebook"/>
+                <label for="facebook"><i class="radio-icon"></i><span>Facebook</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-others" id="instagram" type="radio" name="whats" value="instagram"/>
+                <label for="instagram"><i class="radio-icon"></i><span>İnstagram</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-others" id="twitter" type="radio" name="whats" value="twitter"/>
+                <label for="twitter"><i class="radio-icon"></i><span>Twitter</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-others" id="linkedin" type="radio" name="whats" value="linkedin"/>
+                <label for="linkedin"><i class="radio-icon"></i><span>Linkedin</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-others" id="billboard" type="radio" name="whats" value="billboard"/>
+                <label for="billboard"><i class="radio-icon"></i><span>Billboard</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-others" id="dergi" type="radio" name="whats" value="dergi"/>
+                <label for="dergi"><i class="radio-icon"></i><span>Dergi</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-others" id="web" type="radio" name="whats" value="web"/>
+                <label for="web"><i class="radio-icon"></i><span>Web</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-others" id="cevre" type="radio" name="whats" value="cevre"/>
+                <label for="cevre"><i class="radio-icon"></i><span>Çevre</span></label>
+              </div>
+              <div class="radio">
+                <input class="gender-others" id="diger" type="radio" name="whats" value="diger"/>
+                <label for="diger"><i class="radio-icon"></i><span>Diğer</span></label>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </fieldset>
+      <fieldset>
+        <div class="form-row">
+          <div class="form-element full">
+            <div class="check-group">
+              <div class="checkbox">
+                <input type="checkbox" name="accept" id="accept"/>
+                <label for="accept"><i class="check-icon"></i><a href="javascript:void(0)" onclick="sartname()">  Bursluluk Sınavı Şartnamesini</a><span>okudum. Kabul ediyorum.</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-element">
+            <button type="submit">Gönder</button>
+          </div>
+        </div>
+      </fieldset>
     </form>
+  </div>
+  <div class="hidden" id="sartlar">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas molestiae</p>
   </div>
 </div>

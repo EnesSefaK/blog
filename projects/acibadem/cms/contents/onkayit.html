@@ -1,0 +1,41 @@
+
+<div id="subpage">
+  <div class="container">
+    <h1 class="pagetitle">Başvuru Formu</h1>
+    <form id="application-form" action="#" method="post" name="applicationForm">
+      <div class="form-row">
+        <div class="form-element form-element--size-4">
+          <label for="student-name">Öğrenci Adı ve Soyadı<span class="hidden form-error form-error--color-red required-message" data-name="studentName">Zorunlu Alan *</span></label>
+          <input id="student-name" type="text" placeholder="Öğrenci Adı ve Soyadı" required="required" name="studentName"/><i class="mood-icon"></i>
+        </div>
+        <div class="form-element form-element--size-4">
+          <label for="parent-name">Veli Adı ve Soyadı<span class="hidden form-error form-error--color-red required-message" data-name="parentName">Zorunlu Alan *</span></label>
+          <input id="parent-name" type="text" placeholder="Veli Adı ve Soyadı" required="required" name="parentName"/><i class="mood-icon"></i>
+        </div>
+        <div class="form-element form-element--size-4">
+          <label for="class-level">Başvurduğu Sınıf Seviyesi<span class="hidden form-error form-error--color-red required-message" data-name="level">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="level"> Değer 5'den küçük 8'den büyük Olamaz !</span></label>
+          <input type="number" placeholder="Başvurduğu Sınıf Seviyesi" name="level" required="required" min="5" max="8" pattern="[5-8]{1}" id="class-level"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-element form-element--size-2">
+          <label for="phone">Telefon Numarası<span class="hidden form-error form-error--color-red required-message" data-name="phone">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="phone">Geçerli bir Değer Giriniz ! (05554445566)</span></label>
+          <input id="parent-phone" type="tel" placeholder="Telefon Numarası" required="required" pattern="[0-9]{11}" name="phone"/><i class="mood-icon"></i>
+        </div>
+        <div class="form-element form-element--size-2">
+          <label for="mail">Mail Adresi<span class="hidden form-error form-error--color-red required-message" data-name="mail">Zorunlu Alan *</span><span class="form-error form-error--color-red pattern-message" data-name="mail">Geçerli bir Değer Giriniz !</span></label>
+          <input id="parent-mail" type="mail" placeholder="Mail Adresi" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" required="required" name="mail"/><i class="mood-icon"></i>
+        </div>
+        <div class="form-element" style="width: 100%;">
+          <label for="description">Açıklama</label>
+          <textarea id="address" name="description" cols="60" rows="2" placeholder="Açıklama"></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-element">
+          <button class="btn btn--bg-red" type="submit">Gönder</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
