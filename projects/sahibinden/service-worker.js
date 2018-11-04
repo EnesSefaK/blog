@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.48e09daa1442a5bda367c9fc2c296117.js"
+  "/precache-manifest.80835d2b042d47c0e59eb4b1439c4619.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "sahibinden"});
