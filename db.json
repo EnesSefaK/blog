@@ -1,23 +1,23 @@
 {"user": {
-        photo: "img/user.png",
-        name: "User Name",
-        userId: 10,
-        stories: [
+        "photo": "img/user.png",
+        "name": "User Name",
+        "userId": 10,
+        "stories": [
           {
-            id: 1,
-            type: "image",
-            src: "img/heyy.png",
-            background: "",
-            viewingUsers: [2136, 3, 7048],
-            items: []
+            "id": 1,
+            "type": "image",
+            "src": "img/heyy.png",
+            "background": "",
+            "viewingUsers": [2136, 3, 7048],
+            "items": []
           },
           {
-            id: 2,
-            type: "image",
-            src: "img/heyy.png",
-            background: "",
-            viewingUsers: [3, 2136],
-            items: []
+            "id": 2,
+            "type": "image",
+            "src": "img/heyy.png",
+            "background": "",
+            "viewingUsers": [3, 2136],
+            "items": []
           }
         ]
       },
