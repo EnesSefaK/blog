@@ -1,4 +1,4 @@
-[
+{"stories": [
 	{
 		"userId": 3,
 		"photo": "https://www.aylavblog.com/upload/images/profilephoto/small/avatar.png",
@@ -63,3 +63,4 @@
 		]
 	}
 ]
+}
