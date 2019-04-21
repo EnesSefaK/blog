@@ -1,7 +1,7 @@
 {"user": {
         "photo": "img/user.png",
         "name": "User Name",
-        "userId": 10,
+        "id": 10,
         "stories": [
           {
             "id": 1,
@@ -23,7 +23,7 @@
       },
 	"users": [
 	{
-		"userId": 3,
+		"id": 3,
 		"photo": "https://www.aylavblog.com/upload/images/profilephoto/small/avatar.png",
 		"name": "Emirhan Yılmazer",
 		"userName": "e.yilmazer",
@@ -50,7 +50,7 @@
 		]
 	},
 	{
-		"userId": 2136,
+		"id": 2136,
 		"photo": "https://www.aylavblog.com/upload/images/profilephoto/small/434e3520-4f0c-476e-9370-6fabf037d050-2136.jpg",
 		"name": "HUSEYIN COSKUN",
 		"userName": "h.coskun",
@@ -68,7 +68,7 @@
 		]
 	},
 	{
-		"userId": 7048,
+		"id": 7048,
 		"photo": "https://www.aylavblog.com/upload/images/profilephoto/small/20180621_114155-7048.jpg",
 		"name": "LEVENT TACIR",
 		"userName": "l.tacir",
