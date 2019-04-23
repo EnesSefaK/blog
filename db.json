@@ -1,94 +1,144 @@
-{"user": {
-        "photo": "img/user.png",
-        "name": "User Name",
-        "id": 10,
-        "stories": [
-          {
-            "id": 1,
-            "type": "image",
-            "src": "img/heyy.png",
-            "background": "",
-            "viewingUsers": [2136, 3, 7048],
-            "items": []
-          },
-          {
-            "id": 2,
-            "type": "image",
-            "src": "img/heyy.png",
-            "background": "",
-            "viewingUsers": [3, 2136],
-            "items": []
-          }
-        ]
+{
+  "user": {
+    "photo": "img/user.png",
+    "name": "User Name",
+    "id": 10,
+    "stories": [
+      {
+        "id": 1,
+        "type": "image",
+        "src": "img/heyy.png",
+        "background": "",
+        "viewingUsers": [
+          2136,
+          3,
+          7048
+        ],
+        "items": []
       },
-	"users": [
-	{
-		"id": 3,
-		"photo": "https://www.aylavblog.com/upload/images/profilephoto/small/avatar.png",
-		"name": "Emirhan Yılmazer",
-		"userName": "e.yilmazer",
-		"lastUpdated": "2019-04-15T13:01:20",
-		"stories": [
-			{
-				"id": 1592,
-				"type": "image",
-				"src": "https://placeimg.com/425/747/people",
-				"time": "2019-04-15T13:01:20",
-				"items": [],
-				"viewingUsers": [],
-				"duration": 5
-			},
-			{
-				"id": 1591,
-				"type": "video",
-				"src": "video/Pexels_Videos.mp4",
-				"time": "2019-04-15T13:01:06",
-				"items": [],
-				"viewingUsers": [],
-				"duration": 5
-			}
-		]
-	},
-	{
-		"id": 2136,
-		"photo": "https://www.aylavblog.com/upload/images/profilephoto/small/434e3520-4f0c-476e-9370-6fabf037d050-2136.jpg",
-		"name": "HUSEYIN COSKUN",
-		"userName": "h.coskun",
-		"lastUpdated": "2019-04-15T10:33:33",
-		"stories": [
-			{
-				"id": 1590,
-				"type": "image",
-				"src": "https://www.aylavblog.com/upload/images/story/4AE49264-A703-4651-8714-A5D090C465C4-1590.jpeg",
-				"time": "2019-04-15T10:33:33",
-				"items": [],
-				"viewingUsers": [],
-				"duration": 5
-			}
-		]
-	},
-	{
-		"id": 7048,
-		"photo": "https://www.aylavblog.com/upload/images/profilephoto/small/20180621_114155-7048.jpg",
-		"name": "LEVENT TACIR",
-		"userName": "l.tacir",
-		"lastUpdated": "2019-04-15T10:24:03",
-		"stories": [
-			{
-				"id": 1589,
-				"type": "image",
-				"src": "https://www.aylavblog.com/upload/images/story/20190415_102309-1589.jpg",
-				"time": "2019-04-15T10:24:03",
-				"items": [],
-				"viewingUsers": [],
-				"duration": 5
-			}
-		]
-	}
-],
- "messages": [{
-	"userId": 3,
-	"message": "Hi",
-	"id": 2
-}]
+      {
+        "id": 1,
+        "type": "image",
+        "src": "https://placeimg.com/425/747/people",
+        "background": "",
+        "viewingUsers": [
+          2136,
+          3,
+          7048
+        ],
+        "items": []
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "src": "img/heyy.png",
+        "background": "",
+        "viewingUsers": [
+          3,
+          2136
+        ],
+        "items": []
+      }
+    ]
+  },
+  "users": [
+    {
+      "id": 3,
+      "photo": "https://www.aylavblog.com/upload/images/profilephoto/small/avatar.png",
+      "name": "Emirhan Yılmazer",
+      "userName": "e.yilmazer",
+      "lastUpdated": "2019-04-15T13:01:20",
+      "stories": [
+        {
+          "id": 1592,
+          "type": "image",
+          "src": "https://placeimg.com/425/747/people",
+          "time": "2019-04-15T13:01:20",
+          "items": [],
+          "viewingUsers": [],
+          "duration": 5
+        },
+        {
+          "id": 1591,
+          "type": "video",
+          "src": "video/Pexels_Videos.mp4",
+          "time": "2019-04-15T13:01:06",
+          "items": [],
+          "viewingUsers": [],
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "id": 21366,
+      "photo": "https://www.aylavblog.com/upload/images/profilephoto/small/434e3520-4f0c-476e-9370-6fabf037d050-2136.jpg",
+      "name": "Text",
+      "userName": "h.coskun",
+      "lastUpdated": "2019-04-15T10:33:33",
+      "stories": [
+        {
+          "id": "e4ddc2f6-8d72-4cc1-9501-7b51f990eea4",
+          "type": "text",
+          "src": "",
+          "background": "linear-gradient(to right bottom,#0e277c,#0c2370,#0a1e64,#081a58,#07164c)",
+          "viewingUsers": [],
+          "items": [
+            {
+              "type": "text",
+              "value": "dsdsd",
+              "vertical": "middle",
+              "customProperties": {
+                "color": "#fff",
+                "font": "400 30px 'Open Sans', sans-serif"
+              }
+            }
+          ],
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "id": 2136,
+      "photo": "https://www.aylavblog.com/upload/images/profilephoto/small/434e3520-4f0c-476e-9370-6fabf037d050-2136.jpg",
+      "name": "HUSEYIN COSKUN",
+      "userName": "h.coskun",
+      "lastUpdated": "2019-04-15T10:33:33",
+      "stories": [
+        {
+          "id": 1590,
+          "type": "image",
+          "src": "https://www.aylavblog.com/upload/images/story/4AE49264-A703-4651-8714-A5D090C465C4-1590.jpeg",
+          "time": "2019-04-15T10:33:33",
+          "items": [],
+          "viewingUsers": [],
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "id": 7048,
+      "photo": "https://www.aylavblog.com/upload/images/profilephoto/small/20180621_114155-7048.jpg",
+      "name": "LEVENT TACIR",
+      "userName": "l.tacir",
+      "lastUpdated": "2019-04-15T10:24:03",
+      "stories": [
+        {
+          "id": 1589,
+          "type": "image",
+          "src": "https://www.aylavblog.com/upload/images/story/20190415_102309-1589.jpg",
+          "time": "2019-04-15T10:24:03",
+          "items": [],
+          "viewingUsers": [],
+          "duration": 5
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "userId": 3,
+      "message": "Hi",
+      "id": 2
+    }
+  ]
 }
