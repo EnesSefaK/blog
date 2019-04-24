@@ -14,7 +14,7 @@
           3,
           7048
         ],
-        "items": []
+        "items": ""
       },
       {
         "id": 1,
@@ -26,7 +26,7 @@
           3,
           7048
         ],
-        "items": []
+        "items": ""
       },
       {
         "id": 2,
@@ -54,7 +54,7 @@
           "type": "image",
           "src": "https://placeimg.com/425/747/people",
           "time": "2019-04-15T13:01:20",
-          "items": [],
+          "items": "",
           "viewingUsers": [],
           "duration": 5
         },
@@ -63,7 +63,7 @@
           "type": "video",
           "src": "video/Pexels_Videos.mp4",
           "time": "2019-04-15T13:01:06",
-          "items": [],
+          "items": "",
           "viewingUsers": [],
           "duration": 5
         }
@@ -82,17 +82,7 @@
           "src": "",
           "background": "linear-gradient(to right bottom,#0e277c,#0c2370,#0a1e64,#081a58,#07164c)",
           "viewingUsers": [],
-          "items": [
-            {
-              "type": "text",
-              "value": "dsdsd",
-              "vertical": "middle",
-              "customProperties": {
-                "color": "#fff",
-                "font": "400 30px 'Open Sans', sans-serif"
-              }
-            }
-          ],
+          "items": "",
           "duration": 5
         }
       ]
@@ -109,7 +99,7 @@
           "type": "image",
           "src": "https://www.aylavblog.com/upload/images/story/4AE49264-A703-4651-8714-A5D090C465C4-1590.jpeg",
           "time": "2019-04-15T10:33:33",
-          "items": [],
+          "items": "",
           "viewingUsers": [],
           "duration": 5
         }
@@ -127,7 +117,7 @@
           "type": "image",
           "src": "https://www.aylavblog.com/upload/images/story/20190415_102309-1589.jpg",
           "time": "2019-04-15T10:24:03",
-          "items": [],
+          "items": "",
           "viewingUsers": [],
           "duration": 5
         }
